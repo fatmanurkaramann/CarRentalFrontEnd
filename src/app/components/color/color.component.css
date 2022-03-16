@@ -1,0 +1,11 @@
+.table{
+   color: rgba(0, 0, 0, 0.651);  
+   max-width: 40%;
+}
+#rowColor{
+    color: rgba(101, 129, 82, 0.795);
+    font-weight: 500;
+}
+.container{
+    margin-top: 5%;
+}

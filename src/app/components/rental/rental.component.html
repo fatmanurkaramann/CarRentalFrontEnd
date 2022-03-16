@@ -1,0 +1,27 @@
+<div class="container">
+    
+    <table class="table table-striped" id="table">
+        
+        <thead>
+          <tr>
+            <th >#</th>
+            <th >Müşteri</th>
+            <th >Aracın Markası</th>
+            <th >Kiralandığı Tarih</th>
+            <th >İade Tarihi</th>
+
+          </tr>
+        </thead>
+        <tbody>
+         <tr id="rowRentals" *ngFor="let rental of rentals" >
+             <th style="width: 10%;">{{rental.id}}</th>
+             <th >{{rental.firstName}} {{rental.lastName}}</th>
+             <th>{{rental.brandName}}</th>
+             <th>{{rental.rentDate | date:'dd/MMM/yyyy - hh.mm'}}</th>
+             <th *ngIf="rental.returnDate!=null">{{rental.returnDate | date:'dd/MMM/yyyy - hh.mm'}}</th>
+             <th *ngIf="rental.returnDate==null" style="color: red;">Araç geri verilmedi.</th>
+         </tr>
+        </tbody>
+      </table>
+    
+</div>

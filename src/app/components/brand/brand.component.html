@@ -1,0 +1,19 @@
+<div class="container">
+    
+    <table class="table table-striped" id="table">
+        
+        <thead>
+          <tr>
+            <th >Id</th>
+            <th >Marka</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr id="rowBrands" *ngFor="let brand of brands" >
+             <th style="width: 10%;">{{brand.brandId}}</th>
+             <th >{{brand.brandName}}</th>
+         </tr>
+        </tbody>
+      </table>
+    
+</div>
