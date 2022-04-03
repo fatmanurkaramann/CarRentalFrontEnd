@@ -1,0 +1,10 @@
+.container{
+    margin-top:1%;
+}
+#rowCustomers{
+    color: rgb(221, 200, 200);
+}
+#table{
+    width: 50%;
+     font-size: medium;
+}

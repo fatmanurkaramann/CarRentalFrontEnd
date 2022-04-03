@@ -10,6 +10,7 @@ import { ColorComponent } from './components/color/color.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { RentalComponent } from './components/rental/rental.component';
 import { DateFormatPipe } from './pipes/dateformat.pipe';
+import { CustomerComponent } from './components/customer/customer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { DateFormatPipe } from './pipes/dateformat.pipe';
     BrandComponent,
     RentalComponent,
     DateFormatPipe,
+    CustomerComponent,
     
   ],
   imports: [
