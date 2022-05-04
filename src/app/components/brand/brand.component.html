@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table table-hover">
+    <thead>
+      <tr >
+        <th  id="brands">Markalar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        id="rowBrands"
+        *ngFor="let brand of brands"
+        (click)="setCurrentBrand(brand)"
+        routerLink="/cars/brand/{{ brand.brandId }}"
+        [class]="getCurrentBrandClass(brand)"
+      >
+        <th>{{ brand.brandId }}</th>
+        <th id="brandpos">{{ brand.brandName }}</th>
+      </tr>
+    </tbody>
+  </table>
+</div>

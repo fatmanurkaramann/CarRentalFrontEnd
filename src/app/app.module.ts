@@ -11,6 +11,8 @@ import { BrandComponent } from './components/brand/brand.component';
 import { RentalComponent } from './components/rental/rental.component';
 import { DateFormatPipe } from './pipes/dateformat.pipe';
 import { CustomerComponent } from './components/customer/customer.component';
+import { TodoComponent } from './components/todo/todo.component';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { CustomerComponent } from './components/customer/customer.component';
     RentalComponent,
     DateFormatPipe,
     CustomerComponent,
+    TodoComponent,
+   
     
   ],
   imports: [

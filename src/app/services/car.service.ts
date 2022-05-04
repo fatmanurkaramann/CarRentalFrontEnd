@@ -18,4 +18,8 @@ export class CarService {
     let newPath = this.apiUrl+"getcarsbybrandid?brandId="+brandId
     return this.httpClient.get<ListResponseModel<CarDetailsDto>>(newPath);
   }
+  getCarDetails(carId:number){
+    let newPath=this.apiUrl+"getcarbydetails?carId="+carId
+    return this.httpClient.get<ListResponseModel<CarDetailsDto>>(newPath);
+  }
 }

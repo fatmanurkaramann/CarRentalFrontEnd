@@ -3,8 +3,19 @@
     
 }
 #table{
-    max-width: 40%;
+    max-width: 50%;
 }
 #rowBrands{
-    color: rgba(138, 81, 202, 0.884);
+    color: #0AA1DD;
+    
+    
+}
+#brandpos{
+color: #525E75;
+
+}
+#brands{
+    color:#006E7F;
+    
+    
 }

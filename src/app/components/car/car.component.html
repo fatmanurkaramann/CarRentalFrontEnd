@@ -1,15 +1,17 @@
 <div class="row">
-    <div class="col-md-4" *ngFor="let car of cars">
-        <div class="card" >
-            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_960_720.jpg"  >
-            <div class="card-body">
-              <h5 class="card-title">{{car.brandName}} - <small class="text-muted" > {{car.carName}}</small></h5>
-              <p class="card-text">{{car.description}}</p>
-            </div>
-            <div class="card-body">
-              <button class="btn btn-outline-info" style="float:right">Kirala</button>
-            </div>
-        </div>
-    </div>
+  <div class="col-md-4" *ngFor="let car of cars" (click)="setCurrentCar(car)"
+  routerLink="/cars/car/{{ car.carId }}"
+  [class]="getCurrentCarClass(car)">
+      <div class="card" >
+          <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_960_720.jpg"  >
+          <div class="card-body">
+            <h5 class="card-title">{{car.brandName}} - <small class="text-muted" > {{car.carName}}</small></h5>
+            <p class="card-text">{{car.description}}</p>
+          </div>
+          <div class="card-body">
+            <button class="btn btn-outline-info" style="float:right">Kirala</button>
+          </div>
+      </div>
+  </div>
 </div>
 
